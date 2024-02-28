@@ -79,16 +79,16 @@ require('data.php');
     <button>Enviar respuestas</button>
 
     <?php
-    if (isset($_REQUEST['pregunta8'])) {
-        $pregunta8 = $_REQUEST['pregunta8'];
-    } else {
-        $pregunta8 = [];
-    }
+        if (isset($_REQUEST['pregunta8'])) {
+            $pregunta8 = $_REQUEST['pregunta8'];
+        } else {
+            $pregunta8 = [];
+        }
 
-    foreach (OPCIONES_8 as $valor => $texto) {
-        $checked = in_array($valor, $pregunta8) ? 'checked' : '';
-        echo "<input type=\"checkbox\" name=\"pregunta8[]\" value=\"$valor\" $checked> $texto<br>";
-    }
+        foreach (OPCIONES_8 as $valor => $texto) {
+            $checked = in_array($valor, $pregunta8) ? 'checked' : '';
+            echo "<input type=\"checkbox\" name=\"pregunta8[]\" value=\"$valor\" $checked> $texto<br>";
+        }
 
     ?>
 
