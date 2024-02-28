@@ -17,7 +17,7 @@ require('data.php');
 <h1>Cuestionario sobre PHP</h1>
 <?php echo $_SERVER['PHP_SELF']; ?>
 
-La etiqueta de apertura &lt;h1&gt; es un encabezado.
+<p>La etiqueta de apertura &lt;h1&gt; es un encabezado.</p>
 
 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
     <p>1. ¿Qué significa PHP?</p>
